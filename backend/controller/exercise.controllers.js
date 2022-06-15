@@ -13,10 +13,10 @@ const createExercise = (req, res) => {
     const date = Date.parse(req.body.date);
 
     const newExercise = new Exercise({
-        userName,
-        description,
-        duration,
-        date,
+        userName: userName,
+        description: description,
+        duration: duration,
+        date: date,
     });
 
     newExercise.save()
